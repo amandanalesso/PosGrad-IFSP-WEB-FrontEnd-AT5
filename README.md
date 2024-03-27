@@ -7,5 +7,5 @@
 
  # Acessando os Arquivos no GitHub
 
-Abrir os arquivos em html ´galeria_foto´ ´cards.html´ e ´navbar´ 
-Os arquivos CSS estão na pasta ´styles´
+Abrir os arquivo em html ´index´ 
+
