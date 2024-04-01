@@ -1,0 +1,160 @@
+* {
+    font-family: 'nunito', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    height: auto;
+  }
+  
+  .product-images {
+    
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .large-image {
+    flex: 1 0 100%;
+    /* max-width: 550px;
+    padding: 5px; */
+  }
+  
+  .product-group-image {
+    display: flex;
+    height: auto;
+    /* margin: 10px; */
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+  
+  .product-group-image img {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    
+    flex-direction: column;
+  }
+  
+  .product-purchase {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .product-price {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  
+  .product-price p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .product-price small {
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  .btn-comprar {
+    background-color: #0a18daf6;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+  }
+
+
+ 
+  @media only screen and (min-width:700px) and (max-width: 999px) {
+    .btn-comprar {
+      background-color: #c00889f6;
+    }
+  
+    .large-image {
+      width: 100%;
+      height: auto;
+     
+    }
+     
+    .product-images {
+       
+        max-height: 550px;
+        flex-wrap: wrap;
+      }
+
+    .product-group-image {
+      display: none;
+    }
+  
+    .product-purchase {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-description {
+      margin: auto;
+    }
+  
+    .btn-comprar {
+      width: 100%;
+      margin-top: 10px;
+    }
+}
+  
+  @media only screen and (min-width: 0px) and (max-width: 699px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .btn-comprar {
+      background-color: #01af3bf6;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .product-purchase {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-description {
+      padding: 10px;
+    }
+  
+    .large-image {
+      width: 100%;
+    }
+  
+    .product-group-image {
+      display: none;
+    }
+  
+    .product-price p {
+      text-align: center;
+      font-size: 24px;
+    }
+}
